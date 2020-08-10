@@ -135,6 +135,10 @@ impl State for BattlefieldState {
 }
 
 widget!(
+    /**
+    Battlefield is the entity which the user interact with.
+    battlefield will abstract and synchronize functions called on physic_world and graphic_world.
+    */
     Battlefield<BattlefieldState>
     {
         world_size: WorldSize,

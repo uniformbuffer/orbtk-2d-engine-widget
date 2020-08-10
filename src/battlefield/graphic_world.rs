@@ -83,6 +83,9 @@ impl State for GraphicWorldState {
 }
 
 widget!(
+    /**
+    GraphicWorld is used to draw entities. It manage only the graphical representation of an entity.
+    */
     GraphicWorld<GraphicWorldState>
     {
         world_size: WorldSize,

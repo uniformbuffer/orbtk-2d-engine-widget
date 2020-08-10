@@ -25,6 +25,12 @@ impl State for ShapeWidgetState {
 }
 
 widget!(
+    /**
+    ShapeWidget is a special widget that have a PhysicalShape property.
+    When added to the Battlefield, it will detect that property and add to the physic engine.
+    Using this widget is not mandatory.
+    The Battlefield widget will accept as "physic widget" every widget that have physical_shape and physical_position properties.
+    */
     ShapeWidget<ShapeWidgetState>
     {
         physical_shape: PhysicalShape,

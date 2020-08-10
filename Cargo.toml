@@ -8,3 +8,8 @@ edition = "2018"
 
 [dependencies]
 orbtk = { git = "https://github.com/redox-os/orbtk.git", branch = "develop" }
+serde = "*"
+ron = "*"
+nalgebra = "*"
+ncollide2d = "*"
+nphysics2d = "*"

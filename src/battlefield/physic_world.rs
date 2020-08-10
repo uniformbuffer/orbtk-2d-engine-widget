@@ -165,6 +165,11 @@ impl State for PhysicWorldState {
 
 
 widget!(
+    /**
+    PhysicWorld is used to manage the physical representation of entities, so that they can interact.
+    The physic is managed by NPhysic2D engine.
+    The main used features are collision detection and proximity (used to check if an entity is inside a specific area)
+    */
     PhysicWorld<PhysicWorldState>
     {
         world_size: WorldSize

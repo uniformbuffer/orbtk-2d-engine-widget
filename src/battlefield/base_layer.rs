@@ -52,9 +52,13 @@ impl State for BaseLayerState {
 type BattlefieldEvents = Vec<BattlefieldEvent>;
 
 widget!(
+    /**
+    Base layer is supposed to be a base layer where entity are added.
+    The idea is that there could be multiple base_layer that store (and display) specific kind of object, so that hiding the layer will hide all the object of that kind.
+    For example is possible to use a base layer for display obstacles and a base layer for display characters.
+    */
     BaseLayer<BaseLayerState>
     {
-        //name: String16,
         battlefield_events: BattlefieldEvents
     }
 );

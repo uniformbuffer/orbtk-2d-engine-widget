@@ -23,6 +23,10 @@ impl State for DiscoveryLayerState {
 }
 
 widget!(
+    /**
+    This layer is supposed to be a layer that will turn the entire map black and,
+    based on the movement of controlled entity, it will make that paths visible.
+    */
     DiscoveryLayer<DiscoveryLayerState>
     {
 
